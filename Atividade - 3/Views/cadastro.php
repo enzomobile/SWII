@@ -10,13 +10,13 @@ session_destroy();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/estilos.css">
+    <link rel="stylesheet" href="../Style/telasForm.css">
     <title>Cadastro</title>
 </head>
 <body>
     
     <h1>Se Cadastre</h1>
-    <form method="POST" action="../App/processa_cadastro.php">
+    <form id="formCadastro" method="POST" action="../App/processa_cadastro.php">
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
         <span id="emailMsg"></span>
@@ -42,6 +42,6 @@ session_destroy();
     </form>
 
     <!-- Máscara de input com javascript, para cpf, e-mail e telefone. -->
-    <script src="../JS/mascaras.js"></script>
+    <script src="../JS/mascarasCadastro.js"></script>
 </body>
 </html>

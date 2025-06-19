@@ -10,12 +10,12 @@ session_destroy();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/estilos.css">
+    <link rel="stylesheet" href="../Style/telasForm.css">
     <title>Login</title>
 </head>
 <body>
     <h1>Login</h1>
-    <form method="POST" action="../App/processa_login.php">
+    <form id="formLogin" method="POST" action="../App/processa_login.php">
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
         <span id="emailMsg"></span>
@@ -29,6 +29,6 @@ session_destroy();
     </form>
 
     <!-- Máscara para o e-mail. -->
-    <script src="../JS/mascaras.js"></script>
+    <script src="../JS/mascarasLogin.js"></script>
 </body>
 </html>
