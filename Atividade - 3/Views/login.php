@@ -1,5 +1,5 @@
 <?php
-//Destroi os dados de session anterior.
+// Destrói os dados de session anterior.
 
 session_start();
 session_destroy();
@@ -27,5 +27,8 @@ session_destroy();
         <button type="submit">Entrar</button>
         <p>Ainda não tem uma conta? <a href="cadastro.php">Cadastre-se</a></p>
     </form>
+
+    <!-- Máscara para o e-mail. -->
+    <script src="../JS/mascaras.js"></script>
 </body>
 </html>

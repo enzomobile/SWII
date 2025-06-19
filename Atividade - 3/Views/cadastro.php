@@ -1,5 +1,5 @@
 <?php
-//Destroi a sessão para garantir que não haja dados de login anteriores.
+// Destrói os dados de session anterior.
 
 session_start();
 session_destroy();
@@ -14,6 +14,7 @@ session_destroy();
     <title>Cadastro</title>
 </head>
 <body>
+    
     <h1>Se Cadastre</h1>
     <form method="POST" action="../App/processa_cadastro.php">
         <label for="email">E-mail:</label>
@@ -39,5 +40,8 @@ session_destroy();
         <button type="submit">Cadastrar</button>
         <p>Já tem uma conta? <a href="login.php">Faça login</a></p>
     </form>
+
+    <!-- Máscara de input com javascript, para cpf, e-mail e telefone. -->
+    <script src="../JS/mascaras.js"></script>
 </body>
 </html>
