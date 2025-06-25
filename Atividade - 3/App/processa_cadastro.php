@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->close();
         $conn->close();
 
-        header('Location: ../Views/login.php?sucesso=cadastro_realizado');
+        header('Location: ../Views/login.php');
         exit();
     } catch (mysqli_sql_exception $e) {
 

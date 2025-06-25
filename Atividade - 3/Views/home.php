@@ -1,6 +1,12 @@
 <?php
 
 session_start();
+
+if (!isset($_SESSION['logado'])) {
+    header('Location: login.php');
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +17,6 @@ session_start();
     <title>Bem vindo!</title>
 </head>
 <body>
-    
+    <p>Você está logado.</p>
 </body>
 </html>
